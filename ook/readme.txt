@@ -20,14 +20,14 @@ Description: reads file containing on/off keying iq signal.
  
  Program variables:
 
- freq 				310 MHz
+ freq 			310 MHz
  center_freq 		313 MHz
 
- samp_rate			8M
+ samp_rate		8M
  working_samp_rate	400k
 
  filter_cutoff		500k
- filter_transition  1k
+ filter_transition  	1k
 
 
 
@@ -79,6 +79,17 @@ Program: rx_clean_binary.grc
 
 Description: convert floating point magnitude to binary waveform.
 
+This program adds a variable and blocks to the rx_iqfile_demodulation_trigger_output.grc program.
+
+
+
+Program Variables added:
+
+threshold	0.3	
+
+
+
+Program blocks added:
 
 Binary slicer block takes a floating point input and outputs a byte with a value of 1 (hexadecimal notation 0x01) if the input value is greater than or equal to 0.0. In all other cases, the output byte is a 0 (ox00).
 
@@ -86,7 +97,7 @@ Examining the floating point data in this file, there are many data points close
 
 This means we need additional processing before using the binary slicer block.
 
-The signal amplitude will be shifted down by -0.3. Before shifting, the magnitude ranges from 0 to 0.7 approximately. To center the shifted data around 0.0, we add the -0.3, using the ADD CONST block and the threshold variable. Another time sink is added to display the shifted output.
+The signal amplitude will be shifted down by -0.3. Before shifting, we see that the magnitude ranges from 0 to 0.7 approximately. To center the shifted data around 0.0, we add -0.3, using the ADD CONST block and the threshold variable. Another time sink is added to display the shifted output.
 
 The binary slicer block is connected to the add constant block to produce a byte output. We want to view this output, but the time sink block does not display bytes. Therefore, a uchar to float block is added to connect to another time sink. The output is shown as Clean Baseband.
 
