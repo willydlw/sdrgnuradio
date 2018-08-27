@@ -105,8 +105,19 @@ The binary slicer block is connected to the add constant block to produce a byte
 
 
 
+================================================================
 
 
+Program: ook_vector_source_generate_pulse.grc
+
+
+Description: Illustrates how to use a vector source to create digital pulses of 1's and 0's
+
+The pulse length of each symbol is 100 microseconds. The samp_rate variable and the interpolation 
+of the repeater block controls the pulse period.
+
+
+================================================================
 
 
 
