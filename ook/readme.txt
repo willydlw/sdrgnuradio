@@ -108,7 +108,7 @@ The binary slicer block is connected to the add constant block to produce a byte
 ================================================================
 
 
-Program: ook_vector_source_generate_pulse.grc
+Program: vector_source_generate_pulse.grc
 
 
 Description: Illustrates how to use a vector source to create digital pulses of 1's and 0's
@@ -117,8 +117,19 @@ The pulse length of each symbol is 100 microseconds. The samp_rate variable and 
 of the repeater block controls the pulse period.
 
 
+
 ================================================================
 
+
+Program: tx_modulate_vector_source.grc
+
+
+Description: Modulates the OOK vector source signal
+
+
+
+
+********* 
 
 
 Reference: The data file and source program examples are from the book Field Expedient SDR: Basic Digital Communications, Paul Clark and David Clark
