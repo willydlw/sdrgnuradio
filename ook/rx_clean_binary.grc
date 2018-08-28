@@ -420,7 +420,7 @@
     </param>
     <param>
       <key>file</key>
-      <value>/home/diane/Downloads/fesdr-examples-vol3/ch3/scan_00_c313M_s8M.iq</value>
+      <value>/home/diane/repos/sdrgnuradio/ook/scan_00_c313M_s8M.iq</value>
     </param>
     <param>
       <key>_coordinate</key>
