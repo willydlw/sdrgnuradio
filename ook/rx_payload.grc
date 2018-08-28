@@ -509,7 +509,7 @@ units: seconds per sample</value>
     </param>
     <param>
       <key>file</key>
-      <value>ook.bin</value>
+      <value>/home/diane/repos/sdrgnuradio/ook/ook.bin</value>
     </param>
     <param>
       <key>_coordinate</key>
