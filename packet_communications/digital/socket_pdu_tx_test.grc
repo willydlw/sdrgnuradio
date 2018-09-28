@@ -82,30 +82,18 @@
     </param>
   </block>
   <block>
-    <key>variable_repetition_encoder_def</key>
+    <key>variable</key>
     <param>
       <key>comment</key>
       <value></value>
-    </param>
-    <param>
-      <key>dim1</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>dim2</key>
-      <value>1</value>
     </param>
     <param>
       <key>_enabled</key>
       <value>1</value>
     </param>
     <param>
-      <key>framebits</key>
-      <value>8000</value>
-    </param>
-    <param>
       <key>_coordinate</key>
-      <value>(40, 332)</value>
+      <value>(120, 404)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -113,14 +101,64 @@
     </param>
     <param>
       <key>id</key>
-      <value>enc</value>
+      <value>bps</value>
     </param>
     <param>
-      <key>ndim</key>
+      <key>value</key>
+      <value>2</value>
+    </param>
+  </block>
+  <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(40, 324)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
       <value>0</value>
     </param>
     <param>
-      <key>rep</key>
+      <key>id</key>
+      <value>hdr_format</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>digital.header_format_counter(digital.packet_utils.default_access_code, thresh, bps)</value>
+    </param>
+  </block>
+  <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(40, 404)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>thresh</value>
+    </param>
+    <param>
+      <key>value</key>
       <value>3</value>
     </param>
   </block>
@@ -144,7 +182,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(760, 160)</value>
+      <value>(824, 176)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -258,7 +296,7 @@
     </param>
   </block>
   <block>
-    <key>fec_async_encoder</key>
+    <key>digital_protocol_formatter_async</key>
     <param>
       <key>alias</key>
       <value></value>
@@ -276,12 +314,12 @@
       <value>True</value>
     </param>
     <param>
-      <key>encoder</key>
-      <value>enc</value>
+      <key>format</key>
+      <value>hdr_format</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(496, 212)</value>
+      <value>(504, 208)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -289,11 +327,7 @@
     </param>
     <param>
       <key>id</key>
-      <value>fec_async_encoder_0</value>
-    </param>
-    <param>
-      <key>mtu</key>
-      <value>1500</value>
+      <value>digital_protocol_formatter_async_0</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -302,18 +336,6 @@
     <param>
       <key>minoutbuf</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>packed</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>rev_pack</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>rev_unpack</key>
-      <value>False</value>
     </param>
   </block>
   <connection>
@@ -324,14 +346,14 @@
   </connection>
   <connection>
     <source_block_id>digital_crc32_async_bb_0</source_block_id>
-    <sink_block_id>fec_async_encoder_0</sink_block_id>
+    <sink_block_id>digital_protocol_formatter_async_0</sink_block_id>
     <source_key>out</source_key>
     <sink_key>in</sink_key>
   </connection>
   <connection>
-    <source_block_id>fec_async_encoder_0</source_block_id>
+    <source_block_id>digital_protocol_formatter_async_0</source_block_id>
     <sink_block_id>blocks_message_debug_0_0</sink_block_id>
-    <source_key>out</source_key>
+    <source_key>header</source_key>
     <sink_key>print_pdu</sink_key>
   </connection>
 </flow_graph>
