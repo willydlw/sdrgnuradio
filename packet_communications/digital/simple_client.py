@@ -13,7 +13,7 @@ import socket
 import sys
 import time
 
-messages = ['abcd', 'ef', 'ghi']
+messages = ['abcd'] #, 'ef', 'ghi']
 
 server_address = ('localhost', 8000)
 
