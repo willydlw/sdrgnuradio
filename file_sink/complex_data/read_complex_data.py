@@ -1,6 +1,6 @@
 ''' convert gnu radio binary file sink data to readable text file
 
-    gnuradio data stored in output.bin file
+    gnuradio data stored in output.iq file
 
     The gnuradio data type is complex
 
@@ -9,7 +9,7 @@
 import scipy
 import numpy
 
-f = scipy.fromfile(open("output.bin"), dtype=scipy.complex64)
+f = scipy.fromfile(open("output.iq"), dtype=scipy.complex64)
 
 # view writes real and imaginary part on the same line
 numpy.savetxt("sameline.txt", f.view(float).reshape(-1,2))
