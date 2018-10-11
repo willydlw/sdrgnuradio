@@ -76,6 +76,7 @@ int main(int argc, char **argv)
 
   // Construct a file sink to store data stream
   blocks::file_sink::sptr file_sink_0 = blocks::file_sink::make(sizeof(char), "tag_stream.bin");
+
   /*##################################################
   # Connections
   ################################################## */
