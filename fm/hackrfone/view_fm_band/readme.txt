@@ -6,14 +6,18 @@ The tuning frequency variable is set to 98 MHz, with a
 bandwidth of 20 MHz. This will show the entire FM radio
 band in the frequency plot.
 
+The sample rate variable, samp_rate, is set to 10 MHz.
+The HackRF One sample rate is 2 MHz - 20 MHz. Any value
+in this range should work. 
+
 Stronger signals will have higher peaks. These are the FM
 radio stations in your area. Move the mouse cursor overflow
 the higher peaks to see the frequency.
 
-You will not be able to hear
-the radio stations as this flowgraph does not have an 
-audio sink to play the sound. The flowgraph listen_fm.grc
-builds upon this example to add audio output.
+You will not be able to hear the radio stations as this 
+flowgraph does not have an audio sink to play the sound. 
+The flowgraph listen_fm_station.grc builds upon this example 
+to add audio output.
 
 
 Experiments:
@@ -42,5 +46,3 @@ Notes:
     CPU to process as the sample rate you have chosen."
 
     https://lists.gnu.org/archive/html/discuss-gnuradio/2012-02/msg00490.html 
-
-3. The HackRF One sample rate is 2 MHz - 20 MHz.

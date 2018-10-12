@@ -265,7 +265,11 @@ with the device.
 
 With no DC blocker present in the flowgraph,
 there will be a peak in the flow graph center,
-which can be misinterpreted as a signal.</value>
+which can be misinterpreted as a signal.
+
+The DC blocker default was 32, changed to
+1024 to match the default size of the FFT in
+the QT Gui Sink.</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -273,7 +277,7 @@ which can be misinterpreted as a signal.</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(432, 364)</value>
+      <value>(440, 324)</value>
     </param>
     <param>
       <key>_rotation</key>
