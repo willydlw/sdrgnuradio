@@ -1,0 +1,3 @@
+gnuradio programs in this directory are examples
+of receiving and transmitting in the FM radio band,
+88 MHz - 108 MHz.
