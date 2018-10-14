@@ -1,0 +1,50 @@
+Date: 10/14/2018
+
+Flowgraphs tested: 
+    fm_transmit_frequency_slider.grc
+    fm_radio_change_station.grc
+
+
+Hardware tested:
+    HackRF One for both transmission and reception
+
+Wired cable testing:
+    Two HackRF One radios were directly cabled together
+    Transmission and reception was successful on frequencies
+    in the range 87.9 MHz - 107.9 MHz.
+
+ANT500 Antenna Testing:
+    Frequencies tested: 89.9 MHz, 107.9 MHz
+    Radio gain settings tested:
+    TX
+        RF Gain: 0 dB   or  14 dB
+        IF Gain: 20 dB - 35 dB 
+    RX
+        RF Gain: 0 dB   or 14 dB
+        IF Gain: 20 - 40 dB in 8 dB increments
+        BB Gain: 20 dB
+
+
+    Reception was not successful with TX RF gain and RX RF gain at 0 dB.
+    Changing TX RF gain to 14 dB with RX RF gain at 0 dB allowed for line
+    of sight reception of approximately 12 feet. The sound quality was noisy.
+
+    The sound quality improved as the TX IF gain was increased from 20dB
+    to 35 dB.
+
+    Audio quality was good at TX RF gain 14 dB, IF gain 30 dB, up to 
+    approximately 20 feet line of sight, and around 2 corners with
+    open doorways about 10 feet from transmitter.
+
+    The received audio quality improved by setting the RX RF gain to 14 dB.
+    Increasing the RX IF gain from 20 dB to 32 dB allowed reception
+    through two walls, doors closed, about 15 feet from the transmitter.
+
+Summary:
+    Transmission/reception successful with RF gain at 14 dB, and by
+    increasing IF gain on both as well. The RX BB gain was held at
+    the default 20 dB.
+
+
+To Do:
+    Research gain versus frequency for the HackRF One. 
