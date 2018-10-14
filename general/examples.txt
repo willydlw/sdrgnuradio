@@ -1,0 +1,17 @@
+Directory contains some general examples to illustrate
+concepts learned.
+
+1. freq_shift.grc - Illustrates multiplying a 1kHz cosine
+   source by a 2kHz cosine source produces a 3kHz output
+   in the frequency domain. 
+
+   Provides an example of how to use a WX GUI Notebook to
+   show both the output FFT, Time signals in a tabbed form.
+
+
+2. freq_shift_square.grc - Illustrates multiplying a square 
+    wave signal by a sinusoidal signal in the time domain, shifts 
+    the output signal in the frequency domain.
+
+   Square waves are composed of an infinite series of frequency 
+   peaks in the positive and negative directions
