@@ -15,3 +15,7 @@ concepts learned.
 
    Square waves are composed of an infinite series of frequency 
    peaks in the positive and negative directions
+
+3. low_pass_filter_square_wave.grc, high_pass_filter_square_wave.grc,
+   band_pass_filter_square_wave.grc. Shows the frequency domain
+   effects of filtering a square wave. 
