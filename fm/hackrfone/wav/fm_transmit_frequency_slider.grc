@@ -90,7 +90,7 @@ frequency</value>
     </param>
     <param>
       <key>value</key>
-      <value>87.7e6</value>
+      <value>99.5e6</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -1451,7 +1451,10 @@ transmission via osmocom sink.</value>
       <value>22050 Hz x 90 = 1,984,500 Hz
 
 Tutorial video says this is close enough to the 
-2 MHz rate of HackRF</value>
+2 MHz rate of HackRF.
+
+Interpolation 40,000  Decimation 441 matches
+2MHz</value>
     </param>
     <param>
       <key>affinity</key>
@@ -1459,7 +1462,7 @@ Tutorial video says this is close enough to the
     </param>
     <param>
       <key>decim</key>
-      <value>1</value>
+      <value>441</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -1483,7 +1486,7 @@ Tutorial video says this is close enough to the
     </param>
     <param>
       <key>interp</key>
-      <value>90</value>
+      <value>40000</value>
     </param>
     <param>
       <key>maxoutbuf</key>
