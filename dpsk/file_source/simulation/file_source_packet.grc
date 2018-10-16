@@ -202,7 +202,8 @@
     </param>
     <param>
       <key>comment</key>
-      <value></value>
+      <value>When the payload length is 0, the default length
+used will be 512.</value>
     </param>
     <param>
       <key>affinity</key>
@@ -273,7 +274,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>1</value>
     </param>
     <param>
       <key>file</key>
@@ -324,11 +325,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>file</key>
-      <value>/home/diane/repos/sdrgnuradio/dpsk/file_source/simulation/picturein.jpg</value>
+      <value>/home/diane/repos/sdrgnuradio/dpsk/file_source/simulation/in.png</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -375,7 +376,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>1</value>
     </param>
     <param>
       <key>file</key>
@@ -426,11 +427,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>file</key>
-      <value>/home/diane/repos/sdrgnuradio/dpsk/file_source/simulation/pictureout.jpg</value>
+      <value>/home/diane/repos/sdrgnuradio/dpsk/file_source/simulation/out.png</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -477,7 +478,7 @@
     </param>
     <param>
       <key>file</key>
-      <value>/home/diane/repos/sdrgnuradio/test_data/text/hello.txt</value>
+      <value>/home/diane/repos/sdrgnuradio/test_data/images/kitten.png</value>
     </param>
     <param>
       <key>_coordinate</key>
