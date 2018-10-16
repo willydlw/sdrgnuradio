@@ -1,0 +1,7 @@
+Monitor cpu usage:   htop -p O 
+
+
+file hex dump:  xxd file.bin file.hex
+
+
+compare differences: vimdiff file1.hex file2.hex
