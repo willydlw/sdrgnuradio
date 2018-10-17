@@ -159,7 +159,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(760, 604)</value>
+      <value>(840, 828)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -214,7 +214,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(232, 236)</value>
+      <value>(264, 292)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -277,11 +277,11 @@
     </param>
     <param>
       <key>file</key>
-      <value>/home/diane/repos/sdrgnuradio/gmsk/file_source/simulation/in.bin</value>
+      <value>/home/diane/repos/sdrgnuradio/gmsk/file_source/simulation/packet_encoder_decoder/in.bin</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(240, 140)</value>
+      <value>(272, 196)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -328,11 +328,11 @@
     </param>
     <param>
       <key>file</key>
-      <value>/home/diane/repos/sdrgnuradio/gmsk/file_source/simulation/decode.bin</value>
+      <value>/home/diane/repos/sdrgnuradio/gmsk/file_source/simulation/packet_encoder_decoder/decode.bin</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(952, 596)</value>
+      <value>(1048, 820)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -379,7 +379,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(16, 268)</value>
+      <value>(48, 324)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -434,7 +434,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(696, 276)</value>
+      <value>(728, 332)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -485,7 +485,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(176, 612)</value>
+      <value>(224, 820)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -536,7 +536,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(544, 580)</value>
+      <value>(592, 788)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -552,7 +552,7 @@
     </param>
     <param>
       <key>log</key>
-      <value>False</value>
+      <value>True</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -576,7 +576,7 @@
     </param>
     <param>
       <key>verbose</key>
-      <value>False</value>
+      <value>True</value>
     </param>
   </block>
   <block>
@@ -603,7 +603,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(432, 268)</value>
+      <value>(464, 324)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -670,7 +670,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(336, 564)</value>
+      <value>(384, 772)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -707,6 +707,68 @@
     <param>
       <key>win</key>
       <value>firdes.WIN_HAMMING</value>
+    </param>
+  </block>
+  <block>
+    <key>note</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(48, 620)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>note_0</value>
+    </param>
+    <param>
+      <key>note</key>
+      <value>RECEIVER</value>
+    </param>
+  </block>
+  <block>
+    <key>note</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(40, 172)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>note_0_0</value>
+    </param>
+    <param>
+      <key>note</key>
+      <value>TRANSMITTER</value>
     </param>
   </block>
   <block>
@@ -757,7 +819,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(680, 156)</value>
+      <value>(712, 212)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -1056,7 +1118,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(560, 452)</value>
+      <value>(608, 660)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -1248,7 +1310,7 @@
     </param>
     <param>
       <key>name</key>
-      <value>"Low Pass Filter RX"</value>
+      <value>"Low Pass Filtered"</value>
     </param>
     <param>
       <key>nconnections</key>
@@ -1343,7 +1405,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(680, 348)</value>
+      <value>(712, 404)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -1706,11 +1768,11 @@
     </param>
     <param>
       <key>label0</key>
-      <value>Mod Freq</value>
+      <value>Modulated Freq</value>
     </param>
     <param>
       <key>label1</key>
-      <value>Mod Time</value>
+      <value>Modulated Time</value>
     </param>
     <param>
       <key>label10</key>
@@ -1801,7 +1863,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(920, 276)</value>
+      <value>(952, 332)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1828,7 +1890,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(0, 612)</value>
+      <value>(48, 820)</value>
     </param>
     <param>
       <key>_rotation</key>
