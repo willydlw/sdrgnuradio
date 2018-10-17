@@ -238,7 +238,7 @@
     </param>
     <param>
       <key>samples_per_symbol</key>
-      <value>4</value>
+      <value>2</value>
     </param>
   </block>
   <block>
@@ -493,7 +493,7 @@
     </param>
     <param>
       <key>vector</key>
-      <value>list(ord(i) for i in 'abcd')</value>
+      <value>list(ord(i) for i in 'Lynx')</value>
     </param>
   </block>
   <block>
