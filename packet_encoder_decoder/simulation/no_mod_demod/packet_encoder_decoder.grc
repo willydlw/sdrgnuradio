@@ -453,7 +453,7 @@
     </param>
     <param>
       <key>file</key>
-      <value>/home/diane/repos/sdrgnuradio/packet_encoder_decoder/kitten.png</value>
+      <value>/home/diane/repos/sdrgnuradio/test_data/images/kitten.png</value>
     </param>
     <param>
       <key>_coordinate</key>
