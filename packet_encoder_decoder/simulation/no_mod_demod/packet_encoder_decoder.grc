@@ -847,6 +847,37 @@ unpacked block</value>
     </param>
   </block>
   <block>
+    <key>note</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value>When set to 0, the length used is 512</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(480, 388)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>note_3</value>
+    </param>
+    <param>
+      <key>note</key>
+      <value>payload length</value>
+    </param>
+  </block>
+  <block>
     <key>virtual_source</key>
     <param>
       <key>comment</key>
