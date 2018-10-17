@@ -1,0 +1,40 @@
+Reference: https://www.gnuradio.org/doc/sphinx-3.7.7/digital/pkt_utils.html
+
+The default preamble and access code are shown below.
+
+preamble 1010010011110010
+
+1010 0100 1111 0010
+a    4    f    2
+
+
+access code 1010110011011101101001001110001011110010100011000010000011111100
+
+1010 1100 1101 1101 1010 0100 1110 0010 1111 0010 1000 1100 0010 0000 1111 1100
+a     c    d    d    a    4    e    2     f    2    8   c     2   0    f    c
+
+
+Running the flowgraph packet_encoder_test.grc, generate option: No Gui
+
+Vector source input list(ord(i) for i in 'abcd'), set to No for repeat.
+Packet encoder settings:
+    Samples/symbol 2
+    Bits/Symbol: 1
+    Preamble:  leave blank to use default
+    Access Code: leave blank to use default
+    Pad for USRP: No
+    Payload Length: 4
+
+produces the following encoded output
+
+a4f2 acdd a4e2 f28c 20fc 0008 0008 9e5d 6374 3d40 334e 55 
+
+where the first two bytes are the preamble a4f2
+the next eight bytes are the access code acdd a4e2 f28c 20fc
+the next two bytes are the number of bytes in the payload 0008 0008
+
+Questions? Is the payload length 8 because the packet length is 4 and
+samples per symbol are 2? Does not appear to be the case. When the 
+samples per symbol are changed the 0008 0008 bytes still appear.
+
+At this time, the remaining bytes (9e5d 6374 3d40 334e 55) are a mystery.
