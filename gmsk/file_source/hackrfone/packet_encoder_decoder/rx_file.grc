@@ -93,6 +93,33 @@
     </param>
     <param>
       <key>_coordinate</key>
+      <value>(608, 48)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>center_freq</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>0</value>
+    </param>
+  </block>
+  <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
       <value>(240, 36)</value>
     </param>
     <param>
@@ -360,7 +387,7 @@
     </param>
     <param>
       <key>samples_per_symbol</key>
-      <value>2</value>
+      <value>8</value>
     </param>
     <param>
       <key>verbose</key>
@@ -470,7 +497,7 @@
     </param>
     <param>
       <key>freq0</key>
-      <value>100e6</value>
+      <value>center_freq</value>
     </param>
     <param>
       <key>gain_mode0</key>
@@ -2184,7 +2211,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(280, 244)</value>
+      <value>(256, 244)</value>
     </param>
     <param>
       <key>gui_hint</key>
