@@ -10,7 +10,7 @@
     </param>
     <param>
       <key>window_size</key>
-      <value></value>
+      <value>2048,2048</value>
     </param>
     <param>
       <key>category</key>
@@ -93,7 +93,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(416, 36)</value>
+      <value>(504, 36)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -101,11 +101,38 @@
     </param>
     <param>
       <key>id</key>
-      <value>code1</value>
+      <value>cutoff_freq</value>
     </param>
     <param>
       <key>value</key>
-      <value>'010110011011101100010101011111101001001110001011010001101010001'</value>
+      <value>samp_rate/2</value>
+    </param>
+  </block>
+  <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(360, 36)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>payload_length</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>16</value>
     </param>
   </block>
   <block>
@@ -159,7 +186,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(840, 828)</value>
+      <value>(840, 812)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -242,7 +269,7 @@
     </param>
     <param>
       <key>payload_length</key>
-      <value>128</value>
+      <value>payload_length</value>
     </param>
     <param>
       <key>preamble</key>
@@ -273,7 +300,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>file</key>
@@ -324,7 +351,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>file</key>
@@ -332,7 +359,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1048, 820)</value>
+      <value>(1048, 804)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -375,7 +402,7 @@
     </param>
     <param>
       <key>file</key>
-      <value>/home/diane/repos/sdrgnuradio/test_data/text/test.txt</value>
+      <value>/home/diane/repos/sdrgnuradio/test_data/text/test0123.txt</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -408,6 +435,37 @@
     <param>
       <key>vlen</key>
       <value>1</value>
+    </param>
+  </block>
+  <block>
+    <key>blocks_message_debug</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(1264, 984)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_message_debug_0</value>
     </param>
   </block>
   <block>
@@ -513,6 +571,108 @@
     </param>
   </block>
   <block>
+    <key>blocks_stream_to_tagged_stream</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(776, 1036)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_stream_to_tagged_stream_0</value>
+    </param>
+    <param>
+      <key>len_tag_key</key>
+      <value>"packet_len"</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>packet_len</key>
+      <value>payload_length</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>byte</value>
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
+    </param>
+  </block>
+  <block>
+    <key>blocks_tagged_stream_to_pdu</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(1016, 1044)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_tagged_stream_to_pdu_0</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>byte</value>
+    </param>
+    <param>
+      <key>tag</key>
+      <value>packet_len</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+  </block>
+  <block>
     <key>digital_gmsk_demod</key>
     <param>
       <key>alias</key>
@@ -552,7 +712,7 @@
     </param>
     <param>
       <key>log</key>
-      <value>True</value>
+      <value>False</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -572,11 +732,11 @@
     </param>
     <param>
       <key>samples_per_symbol</key>
-      <value>2</value>
+      <value>8</value>
     </param>
     <param>
       <key>verbose</key>
-      <value>True</value>
+      <value>False</value>
     </param>
   </block>
   <block>
@@ -627,7 +787,7 @@
     </param>
     <param>
       <key>samples_per_symbol</key>
-      <value>2</value>
+      <value>8</value>
     </param>
     <param>
       <key>verbose</key>
@@ -654,7 +814,7 @@
     </param>
     <param>
       <key>cutoff_freq</key>
-      <value>2e6</value>
+      <value>cutoff_freq</value>
     </param>
     <param>
       <key>decim</key>
@@ -702,7 +862,7 @@
     </param>
     <param>
       <key>width</key>
-      <value>2e5</value>
+      <value>cutoff_freq*0.10</value>
     </param>
     <param>
       <key>win</key>
@@ -823,7 +983,7 @@
     </param>
     <param>
       <key>gui_hint</key>
-      <value>tab@0</value>
+      <value></value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1011,7 +1171,7 @@
     </param>
     <param>
       <key>name</key>
-      <value>""</value>
+      <value>"GMSK Modulated"</value>
     </param>
     <param>
       <key>nconnections</key>
@@ -1110,7 +1270,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>fftsize</key>
@@ -1409,7 +1569,7 @@
     </param>
     <param>
       <key>gui_hint</key>
-      <value>tab@1</value>
+      <value></value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1669,7 +1829,7 @@
     </param>
     <param>
       <key>name</key>
-      <value>""</value>
+      <value>"GMSK Modulated"</value>
     </param>
     <param>
       <key>nconnections</key>
@@ -1748,11 +1908,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(680, 28)</value>
+      <value>(736, 36)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -1912,6 +2072,12 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
+    <source_block_id>blks2_packet_decoder_0</source_block_id>
+    <sink_block_id>blocks_stream_to_tagged_stream_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
     <source_block_id>blks2_packet_encoder_0</source_block_id>
     <sink_block_id>digital_gmsk_mod_0</sink_block_id>
     <source_key>0</source_key>
@@ -1940,6 +2106,18 @@
     <sink_block_id>low_pass_filter_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_stream_to_tagged_stream_0</source_block_id>
+    <sink_block_id>blocks_tagged_stream_to_pdu_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_tagged_stream_to_pdu_0</source_block_id>
+    <sink_block_id>blocks_message_debug_0</sink_block_id>
+    <source_key>pdus</source_key>
+    <sink_key>print</sink_key>
   </connection>
   <connection>
     <source_block_id>digital_gmsk_demod_0</source_block_id>
