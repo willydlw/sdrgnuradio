@@ -11,7 +11,7 @@ int main(){
 		return -1;
 	}
 
-	for(i = 0; i < 9012; ++i){
+	for(i = 0; i < 128; ++i){
 		fprintf(fptr, "%s", msg);
 	}
 
