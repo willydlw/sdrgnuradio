@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 int main(){
-	char *msg = "0123";
+	char *msg = "abcd";
 	FILE* fptr;
 	int i;
 
-	fptr = fopen("test0123.txt", "w");
+	fptr = fopen("testabcd.txt", "w");
 	if(fptr == NULL){
 		fprintf(stderr, "file open error\n");
 		return -1;
 	}
 
-	for(i = 0; i < 128; ++i){
+	for(i = 0; i < 512; ++i){
 		fprintf(fptr, "%s", msg);
 	}
 
