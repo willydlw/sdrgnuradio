@@ -132,7 +132,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>512</value>
+      <value>16</value>
     </param>
   </block>
   <block>
@@ -390,7 +390,7 @@
     <key>digital_gmsk_mod</key>
     <param>
       <key>bt</key>
-      <value>0.7</value>
+      <value>0.35</value>
     </param>
     <param>
       <key>alias</key>
@@ -442,6 +442,41 @@
     </param>
   </block>
   <block>
+    <key>note</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value>RF  0 or 14dB
+
+IF 0 to 47 dB in 1 dB steps
+
+BB not applicable</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(920, 548)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>note_0</value>
+    </param>
+    <param>
+      <key>note</key>
+      <value>HackRF One TX Gain</value>
+    </param>
+  </block>
+  <block>
     <key>osmosdr_sink</key>
     <param>
       <key>alias</key>
@@ -453,7 +488,7 @@
     </param>
     <param>
       <key>bb_gain0</key>
-      <value>20</value>
+      <value>0</value>
     </param>
     <param>
       <key>bw0</key>
