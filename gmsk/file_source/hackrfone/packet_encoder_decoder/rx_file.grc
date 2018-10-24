@@ -105,7 +105,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>400e6</value>
+      <value>300e6</value>
     </param>
   </block>
   <block>
@@ -132,7 +132,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>1e6</value>
+      <value>5e5</value>
     </param>
   </block>
   <block>
@@ -159,7 +159,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>512</value>
+      <value>16</value>
     </param>
   </block>
   <block>
@@ -311,7 +311,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1112, 776)</value>
+      <value>(1112, 752)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -393,7 +393,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(600, 828)</value>
+      <value>(600, 804)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -448,7 +448,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(856, 836)</value>
+      <value>(856, 812)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -707,7 +707,7 @@
     </param>
     <param>
       <key>bb_gain0</key>
-      <value>16</value>
+      <value>20</value>
     </param>
     <param>
       <key>bw0</key>
@@ -727,15 +727,15 @@
     </param>
     <param>
       <key>gain_mode0</key>
-      <value>False</value>
+      <value>True</value>
     </param>
     <param>
       <key>if_gain0</key>
-      <value>16</value>
+      <value>20</value>
     </param>
     <param>
       <key>iq_balance_mode0</key>
-      <value>1</value>
+      <value>2</value>
     </param>
     <param>
       <key>gain0</key>
@@ -1995,11 +1995,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(16, 356)</value>
+      <value>(0, 356)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -2150,7 +2150,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(280, 564)</value>
+      <value>(280, 580)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -2342,7 +2342,7 @@
     </param>
     <param>
       <key>name</key>
-      <value>"osmocom source"</value>
+      <value>"source"</value>
     </param>
     <param>
       <key>nconnections</key>
@@ -2641,7 +2641,7 @@
     </param>
     <param>
       <key>name</key>
-      <value>"osmocom source"</value>
+      <value>"low pass filtered"</value>
     </param>
     <param>
       <key>nconnections</key>
@@ -3000,7 +3000,7 @@
     </param>
     <param>
       <key>name</key>
-      <value>"osmocom source"</value>
+      <value>"source"</value>
     </param>
     <param>
       <key>nconnections</key>
@@ -3367,7 +3367,7 @@
     </param>
     <param>
       <key>name</key>
-      <value>"osmocom source"</value>
+      <value>"low pass filtered"</value>
     </param>
     <param>
       <key>nconnections</key>
